@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Outfit:wght@400;700&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: row;
+    margin-block-start: 30px;
+    padding-block-end: 30px;
+    margin-inline: 40px;
+    border-bottom: hsla(213, 10%, 44%, 0.2) solid 2px;
+
+}
+
+.logo {
+    margin-right: auto;
+    width: 200px;
+    height: 39px;
+    flex-shrink: 0;
+}
+
+.navigation {
+    width: 476px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    gap: 42px;
+    justify-content: space-between;
+    padding-inline-end: 2px;
+    font-weight: 700;
+
+
+    > a {
+        margin-top: 11px;
+        margin-bottom: 12px;
+        color: #1D2C3C;
+        font-size: 14px;
+        text-decoration: none;        
+    }
+
+    >button {
+        border-radius: 6px;
+        border: 1px solid hsla(213, 10%, 44%, 1);
+        background-color: #FFF;
+        width: 91px;
+        height: 40px;
+        font-weight: 700;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+#main {
+    width: 892px;
+    height: 795px;
+    margin: 0 auto;
+    margin-block-start: 89px;
+    display: flex;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05), 0px 15px 35px 0px rgba(43, 64, 78, 0.10);
+}
+
+#left {
+    flex: 2;
+}
+
+#right {
+    flex: 1;
+    color: #fff;
+    background-color: hsla(204, 84%, 41%, 1);
+}
+
+.right-wrapper {
+    width: 229px;
+    margin: 0 auto;
+}
+
+#price {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+#left h2 {
+    font-size: 30px;
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 41;
+    padding-left: 48px;
+}
+
+#right h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 42;
+    font-style: normal;
+}
+
+span sup {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+sub {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+p.italics {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.right-list {
+    list-style: none;
+    font-weight: 400;
+    font-size: 16px;
+    margin-block-start: 36px;
+    margin-block-end: 36px;
+
+
+    >li {
+        padding-inline-start: 0px;
+    }
+
+    > p{
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+.need {
+    font-weight: 400;
+    width: fit-content;
+    line-height: 24px;
+    padding-bottom: 16px;
+}
+
+.underline {
+    text-decoration: underline hsla(189, 100%, 86%, 1) 2px;
+}
+
+.quote {
+    border-top: 1px solid hsla(189, 100%, 86%, 0.3);
+    width: 227px;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+
+    > p {
+        margin-top: 43px;
+    }
+}
+
+.bitmap img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#bitmap-para {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 17px;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.header3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 25px;
+    padding-block: 35px;
+}
+
+.number {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    color: hsla(211, 49%, 55%, 1);
+    border: 2px solid hsla(211, 49%, 55%, 1);
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+}
+
+#payment {
+    padding-bottom: 35px;
+}
+
+input {
+    background-color: hsla(216, 16%, 94%, 1);
+    border: transparent;
+    height: 36px;
+    margin-top: 5px;
+}
+
+.basic {
+    padding-left: 48px;
+    border-top: 2px solid hsla(200, 5.71%, 41.18%, 0.05); 
+}
+
+#basic-info {
+    padding-top: 35px;
+    padding-bottom: 41px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+::placeholder {
+    padding-inline-start: 13px;
+}
+
+.name-fields {
+    display: flex;
+    gap: 30px;
+}
+
+.bradius4 {
+    border-radius: 4px;
+}
+
+.card-fields {
+    display: flex;
+    flex-direction: row;
+    max-width: 483px;
+}
+
+.cardNumber {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    width: 351px;
+}
+
+.expiry-date {
+    width: 72px;
+}
+
+.cvc {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    width: 60px;
+}
+
+.submit-button {
+    width: 483px;
+    height: 52px;
+    color: hsla(0, 0%, 100%, 1);
+    background-color: hsla(173, 96%, 28%, 1);
+    border-radius: 4px;
+    border: none;
+    margin-top: 39px;
+    font-size: 18px;
+}
+
+.contact-us {
+    padding-top: 24px;    
+    text-align: center;
+    align-items: center;
+    margin-bottom: 47px;
+    line-height: 16px;
+}
+
+#contact-support{
+    text-decoration: underline;
+}
+
+footer {
+    font-size: 14px;
+    color: #636B6F;
+    text-align: center;
+    align-items: center;
+    margin-top: 23px;
+    margin-bottom: 139px;
+}
